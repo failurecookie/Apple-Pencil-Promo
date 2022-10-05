@@ -1,0 +1,49 @@
+/* Full Screen and Ratio Fix*/
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Unused Function (for background -> glitched) */
+/* body { background-image:url('apple.gif'); background-repeat:repeat; } */
+
+#dynamic_title{
+  font-size: 70px;
+}
+
+.main{
+  /* Font and Sizing */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 25px;
+  font-size: 21px;
+
+  /* Declare Fade */
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Some Other Browsers*/
+  -moz-animation: fadein 2s; /* Firefox, I think */
+  -ms-animation: fadein 2s; /* MS Edge, I think */
+  -o-animation: fadein 2s; /* Opera GX */
+  animation: fadein 2s;
+}
+
+/* Fade in Animation */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.mainimg{
+  /* Image Resize and Align*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 75%;
+
+  /* Declare Image Fade */
+    -webkit-animation: fadein 2s; /* Look Above for Browsers */
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}
